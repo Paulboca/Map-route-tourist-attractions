@@ -1,0 +1,21 @@
+<!--{% load static %}-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TILN</title>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    	<link href="{%  static  'css/story.css'  %}" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p>
+          {% for adresa in adrese %}
+            {% if adresa == "-_-" %}
+                <p>{{ "<br>" }}</p>
+            {% else %}
+                <p>{{ adresa }}</p>
+            {% endif %}
+          {% endfor %}
+        </p>
+        <a id="link1" href="index.html">Back to index</a>
+    </body>
+</html>
